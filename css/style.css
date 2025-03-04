@@ -1,0 +1,138 @@
+@import url("fonts.css");
+@import url("normalize.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-container__notepad {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    background-color: #F4F5F7;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.estimate-service {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #F4F5F7;
+}
+
+.estimate-service__container {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1087px;
+    z-index: 1;
+}
+
+.estimate-service__title {
+    margin-top: 22px;
+    margin-bottom: 162px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.estimate-service__description-title {
+    max-width: 708px;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+.estimate-service__description-text {
+    max-width: 629px;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.estimate-service__wrapper {
+    margin-top: 56px;
+}
+
+.estimate-service__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 85px;
+    list-style-type: none;
+    border-left: 2px solid hsla(0, 0%, 0%, 0.08);
+}
+
+.estimate-service__item {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.estimate-service__promotion {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 56px;
+}
+
+.estimate-service__text {
+    padding: 24px 54px 52px 54px;
+    background-color: #FFFFFF;
+    border-radius: 80px;
+}
+
+.estimate-service__button {
+    position: relative;
+    width: 201px;
+    height: 64px;
+    margin-top: -32px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    border-radius: 72px;
+    font-family: "Proximanova-bold";
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 2;
+}
+
+.estimate-service__button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    width: 248px;
+    height: 4px;
+    z-index: -1;
+}
+
+.estimate-service__promotion-wrapper {
+    position: relative;
+    margin-top: -62px;
+    margin-left: 400px;
+    z-index: 3;
+}
+
+.estimate-service__promotion-text {
+    position: absolute;
+    width: 120px;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+    transform: rotate(8deg);
+}
