@@ -1,0 +1,136 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #F4F5F7;
+}
+
+.hero__notepad {
+    position: absolute;
+    width: 593px;
+    height: 600px;
+    background-color: #F4F5F7;
+    object-fit: cover;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    mix-blend-mode: darken;
+}
+
+
+.hero__inner {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1087px;
+    z-index: 1;
+}
+
+.hero__title {
+    margin-top: 22px;
+    margin-bottom: 162px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.hero__description-title {
+    max-width: 708px;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
+.hero__description-text {
+    max-width: 629px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 32px;
+}
+
+.hero__wrapper {
+    margin-top: 56px;
+}
+
+.hero__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 85px;
+    list-style-type: none;
+    border-left: 2px solid hsla(0, 0%, 0%, 0.08);
+}
+
+.hero__item {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hero__promotion {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin: 56px auto;
+    background-color: #FFFFFF;
+    border-radius: 80px;
+    padding: 24px 54px 52px;
+    width: fit-content;
+}
+
+.hero__text {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 16.41px;
+}
+
+.hero__promotion-footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.hero__button {
+    position: relative;
+    width: 200px;
+    height: 64px;
+    border: none;
+    border-radius: 72px;
+    font-family: "Proximanova-bold";
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 2;
+}
+
+.hero__button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    width: 248px;
+    height: 4px;
+    z-index: -1;
+}
+
+.hero__tag {
+    position: absolute;
+    right: calc(-100% + 24px);
+    top: 2px;
+    z-index: 2;
+}
+
+.hero__tag-vector {
+    width: 174px;
+    height: 79px;
+}
+
+.hero__tag-text {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: calc(50% + 6px);
+    text-align: center;
+    transform: translate(-50%, -50%) rotate(8deg);
+}
