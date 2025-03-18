@@ -1,10 +1,15 @@
 @import url("fonts.css");
 @import url("normalize.css");
 @import url("global.css");
-/* @import url("hero.css"); */
-@import url("hero-rem.css");
+@import url("hero.css");
+@import url("service.css");
 @import url("ui-button.css");
 @import url("ui-text.css");
+@import url("ui-image.css");
+@import url("ui-title.css");
+@import url("ui-list.css");
+
+
 
 
 * {

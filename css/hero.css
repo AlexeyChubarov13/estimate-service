@@ -7,14 +7,16 @@
 
 .hero__notepad {
     position: absolute;
-    width: 593px;
-    height: 600px;
+    width: 37rem;
     background-color: #F4F5F7;
-    object-fit: cover;
     right: 0;
     top: 0;
     z-index: 1;
     mix-blend-mode: darken;
+}
+
+.hero__notepad-pic {
+    padding-bottom: 86%;
 }
 
 
@@ -22,47 +24,45 @@
     display: block;
     position: relative;
     width: 100%;
-    max-width: 1087px;
+    max-width: 67rem;
     z-index: 1;
 }
 
 .hero__title {
-    margin-top: 22px;
-    margin-bottom: 162px;
+    margin-top: 1.375rem;
+    margin-bottom: 10.1rem;
     font-weight: 500;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 3rem;
+    line-height: 3.5rem;
 }
 
 .hero__description-title {
-    max-width: 708px;
-    font-size: 48px;
-    line-height: 48px;
+    max-width: 44.25rem;
+    font-size: 3rem;
+    line-height: 3rem;
     font-weight: 400;
 }
 
 .hero__description-text {
-    max-width: 629px;
-    font-size: 24px;
-    line-height: 32px;
-    margin-top: 32px;
+    max-width: 39.3125rem;
+    margin-top: 2rem;
 }
 
 .hero__wrapper {
-    margin-top: 56px;
+    margin-top: 3.5rem;
 }
 
 .hero__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 85px;
+    gap: 2rem 5.3125rem;
     list-style-type: none;
-    border-left: 2px solid hsla(0, 0%, 0%, 0.08);
+    border-left: 0.125rem solid hsla(0, 0%, 0%, 0.08);
 }
 
 .hero__item {
-    font-size: 16px;
-    line-height: 24px;
+    font-size:1rem;
+    line-height: 1.5rem;
 }
 
 .hero__promotion {
@@ -70,18 +70,19 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    margin: 56px auto;
+    margin: 3.5rem auto;
+    margin-bottom: 12rem;
     background-color: #FFFFFF;
-    border-radius: 80px;
-    padding: 24px 54px 52px;
+    border-radius: 5rem;
+    padding: 1.5rem 3.375rem 3.25rem;
     width: fit-content;
 }
 
-.hero__text {
+/* .hero__text {
     font-family: "Roboto";
-    font-size: 14px;
-    line-height: 16.41px;
-}
+    font-size: 0.875rem;
+    line-height: 1.0256rem;
+} */
 
 .hero__promotion-footer {
     position: absolute;
@@ -91,14 +92,8 @@
 }
 
 .hero__button {
-    position: relative;
-    width: 200px;
-    height: 64px;
-    border: none;
-    border-radius: 72px;
-    font-family: "Proximanova-bold";
-    font-size: 18px;
-    line-height: 24px;
+    width: 12.5rem;
+    height: 4rem;
     z-index: 2;
 }
 
@@ -109,28 +104,28 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #222222;
-    width: 248px;
-    height: 4px;
+    width: 15.5rem;
+    height: 0.25rem;
     z-index: -1;
 }
 
 .hero__tag {
     position: absolute;
-    right: calc(-100% + 24px);
-    top: 2px;
+    right: calc(-100% + 1.5rem);
+    top: 0.125rem;
     z-index: 2;
 }
 
 .hero__tag-vector {
-    width: 174px;
-    height: 79px;
+    width: 10.875rem;
+    height: 4.9375rem;
 }
 
 .hero__tag-text {
     position: absolute;
     width: max-content;
     top: 50%;
-    left: calc(50% + 6px);
+    left: calc(50% + 0.375rem);
     text-align: center;
     transform: translate(-50%, -50%) rotate(8deg);
 }
