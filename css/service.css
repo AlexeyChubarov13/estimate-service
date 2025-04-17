@@ -1,8 +1,23 @@
 .service {
     display: flex;
     justify-content: center;
+    position: relative;
     width: 100%;
     background-color: #FFFFFF;
+}
+
+.service__branch {
+    position: absolute;
+    width: 184px;
+    background-color: #FFFFFF;
+    left: 0;
+    bottom: 136px;
+    z-index: 1;
+    mix-blend-mode: darken;
+}
+
+.service__branch-pic {
+    height: 332px;
 }
 
 .service__wrapper {
