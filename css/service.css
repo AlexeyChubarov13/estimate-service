@@ -18,13 +18,17 @@
     text-align: center;
 }
 
-.service__container-list {
+.service__list-wrapper {
+    display: grid;
+    gap: 48px 0;
+}
+
+.service__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0 32px;
     z-index: 1;
     position: relative;
-    padding-bottom: 16px;
 }
 
 .service__card {
@@ -61,17 +65,51 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     min-height: 404px;
 }
 
 .service__cost-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 24px 0;
     height: 100%;
 }
 
 .service__cost-button {
     width: 220px;
     height: 56px;
+}
+
+.service__text {
+    text-align: center;
+    font-weight: 500;
+    opacity: 56%;
+}
+
+.service__text span {
+    font-weight: 700;
+}
+
+.service__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px 0;
+   margin-bottom: 120px;
+}
+
+.service__container-title {
+    text-align: center;
+}
+
+.service__container-text {
+    text-align: center;
+    font-weight: 500;
+    opacity: 56%;
+}
+
+.service__container-button {
+    width: 191px;
+    height: 64px;
 }
