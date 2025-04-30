@@ -24,7 +24,6 @@
     gap: 0 32px;
     z-index: 1;
     position: relative;
-    padding-bottom: 16px;
 }
 
 .service__card {
@@ -61,17 +60,32 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     min-height: 404px;
 }
 
 .service__cost-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100%;
 }
 
 .service__cost-button {
     width: 220px;
     height: 56px;
+}
+
+.service__text {
+    margin-top: 48px;
+    text-align: center;
+    opacity: 56%;
+}
+
+.service__text span {
+    font-weight: 700;
+}
+
+.service__container {
+    margin-top: 48px;
 }
