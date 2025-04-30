@@ -1,8 +1,23 @@
 .service {
     display: flex;
     justify-content: center;
+    position: relative;
     width: 100%;
     background-color: #FFFFFF;
+}
+
+.service__branch {
+    position: absolute;
+    width: 184px;
+    background-color: #FFFFFF;
+    left: 0;
+    bottom: 136px;
+    z-index: 1;
+    mix-blend-mode: darken;
+}
+
+.service__branch-pic {
+    height: 332px;
 }
 
 .service__wrapper {
@@ -18,7 +33,12 @@
     text-align: center;
 }
 
-.service__container-list {
+.service__list-wrapper {
+    display: grid;
+    gap: 48px 0;
+}
+
+.service__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0 32px;
@@ -67,25 +87,11 @@
 .service__cost-list {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
 }
 
 .service__cost-button {
     width: 220px;
     height: 56px;
-}
-
-.service__text {
-    margin-top: 48px;
-    text-align: center;
-    opacity: 56%;
-}
-
-.service__text span {
-    font-weight: 700;
-}
-
-.service__container {
-    margin-top: 48px;
 }
