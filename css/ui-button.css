@@ -5,13 +5,26 @@
     font-family: "Proximanova-bold";
     font-size: 1.125rem;
     line-height: 1.5rem;
+    transition: all 0.3s ease;
 }
 
+.button:active {
+    transform: scale(0.95);
+}
+
+/* --black */
 .button.--black {
     background-color: #222222;
     color: #FFFFFF;
 }
 
+.button.--black:hover {
+    background-color: transparent;
+    color: #222222;
+    box-shadow: 0 0 0 2px #222222;
+}
+
+/* --yellow */
 .button.--yellow {
     background-color: #FFD900;
     color: #222222;
