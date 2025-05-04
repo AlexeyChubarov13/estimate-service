@@ -20,6 +20,13 @@
 }
 
 @font-face {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-style: normal;
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
     font-family: 'Proximanova-bold';
     font-weight: 700;
     font-style: normal;

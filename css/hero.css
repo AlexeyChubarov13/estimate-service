@@ -97,7 +97,11 @@
     z-index: 2;
 }
 
-.hero__button::after {
+.hero__button-wrap {
+    position: relative;
+}
+
+.hero__button-wrap::after {
     content: "";
     position: absolute;
     top: 50%;
