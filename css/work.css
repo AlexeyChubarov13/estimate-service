@@ -72,6 +72,10 @@
     transform: rotate(-90deg);
 }
 
+.work__item:last-child::after {
+    display: none;
+}
+
 .work__description {
     display: flex;
     flex-direction: column;
