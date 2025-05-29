@@ -12,6 +12,8 @@
     transform: scale(0.95);
 }
 
+
+
 /* --black */
 .button.--black {
     background-color: #222222;
@@ -19,8 +21,8 @@
 }
 
 .button.--black:hover {
-    background-color: transparent;
-    color: #222222;
+    background-color: #a514b3;
+    color: #FFFFFF;
     box-shadow: 0 0 0 2px #222222;
 }
 
@@ -28,4 +30,10 @@
 .button.--yellow {
     background-color: #FFD900;
     color: #222222;
+} 
+
+.button.--yellow:hover {
+    background-color: transparent;
+    color: #FFD900;
+    box-shadow: 0 0 0 2px #222222;
 } 
