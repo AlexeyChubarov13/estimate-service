@@ -86,6 +86,12 @@
     flex: 1;
 }
 
+.service__container-list {
+    display: flex;
+    gap: 28px;
+    align-items: stretch;
+}
+
 .service__cost-list {
     display: flex;
     flex-direction: column;

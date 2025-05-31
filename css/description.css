@@ -7,7 +7,7 @@
 .description__wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 67rem;
+    max-width: 70rem;
 }
 
 .description__title {
@@ -18,4 +18,42 @@
 .description__text {
     text-align: center;
     margin-top: 48px;
+    margin-bottom: 56px;
+}
+
+.description__container {
+    display: flex;
+    gap: 75px;
+    margin-bottom: 112px;
+}
+
+.description__benefits {
+    display: flex;
+    flex-direction: column;
+}
+
+.description__benefits-subtitle {
+    position: relative;
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.description__benefits-subtitle::before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 6px;
+    background-color: #FFD900;
+    bottom: -32px;
+    left: 40%;
+}
+
+.description__benefits-text {
+    min-width: 195px;
+    text-align: center;
+}
+
+.description__partners {
+    display: flex;
+    margin-bottom: 56px;
 }
