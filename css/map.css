@@ -3,7 +3,12 @@
     width: 100%;
     height: 32rem;
     /* background-color: blue; */
-    z-index: -1;
+    /* z-index: -1; */
+}
+
+.map__addres {
+    width: 100%;
+    height: 512px;
 }
 
 .map__info {
@@ -15,7 +20,8 @@
     padding: 2.5rem;
     border-radius: 0.5rem;
     background-color: #FFFFFF;
-    z-index: 1;
+    z-index: 2;
+    overflow: visible;
 }
 
 .map__info::before {
@@ -28,7 +34,11 @@
     box-shadow: inset 0 0 0 0.5rem #FFD900;
     border-radius: 0.5rem;
     opacity: 0;
-    z-index: 2;
+    z-index: 1;
+}
+
+.map__info:hover::before {
+    opacity: 1;
 }
 
 .map__subtitle {

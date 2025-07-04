@@ -95,3 +95,7 @@
     width: 13.75rem;
     height: 3.5rem;
 }
+
+.additionally__card:nth-child(2) {
+    padding-bottom: 5rem;
+}
