@@ -23,11 +23,13 @@
                         location: {
                             center: [37.541504, 55.836995],
                             zoom: 15
-                        }
+                        },
+                        behaviors: ['drag'] 
                     }
                 );
     
                 map.addChild(new YMapDefaultSchemeLayer());
+
             }
         </script>
 </head>
@@ -87,6 +89,11 @@
             </div>
         </section>
         <section class="service">
+            <div class="service__branch">
+                <div class="image service__branch-pic">
+                    <img src="img/img-2.png" class="service__branch" alt="Ветка пальмы">
+                </div>
+            </div>
             <div class="service__wrapper">
                 <h2 class="service__title">Стоимость наших услуг</h2>
                 <div class="service__container-list">
@@ -162,7 +169,7 @@
         <section class="additionally">
             <div class="additionally__branch">
                 <div class="image additionally__branch-pic">
-                    <img src="img/img-3.png" class="service__branch" alt="Ветка пальмы">
+                    <img src="img/img-3.png" class="additionally__branch" alt="Ветка пальмы">
                 </div>
             </div>
             <div class="additionally__wrapper">
@@ -268,13 +275,15 @@
         </section>
         <section class="map">
             <div id="map" class="map__addres"></div>
-            <div class="map__info">
-                <h4 class="map__subtitle">Свяжитесь с нами</h4>
-                <a href="tel:+79000000000">+7 900 000 00 00</a>
-                <a href="info@companymail.ru">info@companymail.ru</a>
-                <span>134000, Москва, Большая Академическая 12 корп 2</span>
-                <span>Общество с ограниченной ответственностью «Сметчик Рус» </span>
-                <span>ОГРН/ИНН 11920284320283820 / 502440802827</span>
+            <div class="map__info-wrapper">
+                <div class="map__info">
+                    <h4 class="map__subtitle">Свяжитесь с нами</h4>
+                    <a href="tel:+79000000000" class="map__phone">+7 900 000 00 00</a>
+                    <a href="info@companymail.ru" class="map__mail">info@companymail.ru</a>
+                    <span class="map__address">134000, Москва, Большая Академическая 12 корп 2</span>
+                    <span class="map__ogrn">Общество с ограниченной ответственностью «Сметчик Рус» </span>
+                    <span class="map__inn">ОГРН/ИНН 11920284320283820 / 502440802827</span>
+                </div>
             </div>
         </section>
     </main>
