@@ -34,6 +34,14 @@
     font-weight: 500;
     font-size: 3rem;
     line-height: 3.5rem;
+
+    @media screen (max-width: 376px) {
+        margin-top: 1.375rem;
+        margin-bottom: 10.1rem;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 3.5rem;
+    }
 }
 
 .hero__description-title {
