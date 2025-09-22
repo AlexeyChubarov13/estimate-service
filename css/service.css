@@ -8,10 +8,10 @@
 
 .service__branch {
     position: absolute;
-    width: 11.5rem;
+    width: 184px;
     background-color: #FFFFFF;
     left: 0;
-    bottom: 8.5rem;
+    bottom: 136px;
     z-index: 1;
     mix-blend-mode: darken;
 }
@@ -28,30 +28,36 @@
 }
 
 .service__title {
-    margin-top: 7rem;
-    margin-bottom: 5rem;
+    margin-top: 112px;
+    margin-bottom: 80px;
     text-align: center;
 }
 
-.service__container-list {
+.service__list-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    margin-bottom: 3rem;
-    position: relative;
+    gap: 48px 0;
+}
+
+.service__list {
+    display: flex;
+    align-items: stretch;
+    gap: 32px;
     z-index: 1;
+    position: relative;
 }
 
 .service__card {
+    flex: 1;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     background-color: #FFFFFF;
-    padding: 2.5rem;
-    box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.08);
-    gap: 1.5rem;
-    min-height: 33.75rem;
+    padding: 40px;
+    box-shadow: 0 16px 56px rgba(0, 0, 0, 0.08);
+    margin-left: -8px;
+    margin-top: -8px;
+    gap: 24px;
 }
 
 .service__card::before {
@@ -59,10 +65,10 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
-    box-shadow: inset 0 0 0 0.5rem #FFD900;
-    border-radius: 0.5rem;
+    top: 16px;
+    left: 16px;
+    box-shadow: inset 0 0 0 8px #FFD900;
+    border-radius: 8px;
     opacity: 0;
     z-index: -2;
 }
@@ -76,9 +82,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 2.5rem;
+    gap: 40px;
     flex: 1;
-    min-height: 31.5rem;
 }
 
 .service__container-list {
@@ -90,21 +95,18 @@
 .service__cost-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 24px;
     height: 100%;
-    min-height: 25rem;
 }
 
 .service__cost-button {
-    width: 13.75rem;
-    height: 3.5rem;
+    width: 220px;
+    height: 56px;
 }
 
 .service__text {
-    display: block;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 3rem;
     opacity: 56%;
 }
 
@@ -116,8 +118,8 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 1.875rem;
-   margin-bottom: 7.5rem;
+   gap: 30px;
+   margin-bottom: 120px;
 }
 
 .service__container-title {
@@ -131,6 +133,6 @@
 }
 
 .service__container-button {
-    width: 11.9375rem;
-    height: 4rem;
+    width: 191px;
+    height: 64px;
 }
