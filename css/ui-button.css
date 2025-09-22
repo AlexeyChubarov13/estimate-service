@@ -23,7 +23,7 @@
 .button.--black:hover {
     background-color: #a514b3;
     color: #FFFFFF;
-    box-shadow: 0 0 0 2px #222222;
+    box-shadow: 0 0 0 0.125rem #222222;
 }
 
 /* --yellow */
@@ -35,5 +35,5 @@
 .button.--yellow:hover {
     background-color: transparent;
     color: #FFD900;
-    box-shadow: 0 0 0 2px #222222;
+    box-shadow: 0 0 0 0.125rem #222222;
 } 
