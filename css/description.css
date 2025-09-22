@@ -55,5 +55,6 @@
 
 .description__partners {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 3.5rem;
 }
