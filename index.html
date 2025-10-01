@@ -59,19 +59,44 @@
                         аутсорсинг.</p>
                     <div class="hero__wrapper">
                         <ul class="hero__list">
-                            <li class="hero__item"><strong>Работаем под ключ:</strong> <span>от заключения договора - до сдачи
+                            <li class="hero__item" data-index="1"><strong>Работаем под ключ:</strong><span class="hero__item-text">от заключения договора - до сдачи
                                 заказчику, сопровождаем заказчика до получения положительного заключения государственной
-                                экспертизы (при необходимости)</span></li>
-                            <li class="hero__item"><strong>Рассчитываем сметы для разных целей:</strong> <span>коммерческие,
+                                экспертизы (при необходимости)</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </p>
+                            </li>
+                            <li class="hero__item" data-index="2"><strong>Рассчитываем сметы для разных целей:</strong><span class="hero__item-text">коммерческие,
                                 укрупненные для инвестиций, сметы для участия в тендерах и для работы с бюджетными
-                                организациями</span></li>
-                            <li class="hero__item"><strong>Составляем сметы любой сложности:</strong> <span>на строительство,
-                                ремонт, пуско-наладочные и монтажные работы, проектные и изыскательные работы</span></li>
-                            <li class="hero__item"><strong>Подготовим отчетные документы на выполненные работы:</strong><span>
-                                КС-2, КС-3, КС-6а, КС-11, М-29, КС-6а</span></li>
-                            <li class="hero__item"><strong>Применяем нормативные базы:</strong> <span>ФЕР, ТСНБ, МРР, СБЦ,
-                                РСС, НЦС</span></li>
-                            <li class="hero__item"><strong>Составляем сводные и объектные сметы</strong></li>
+                                организациями</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </p>
+                            </li>
+                            <li class="hero__item" data-index="3"><strong>Составляем сметы любой сложности:</strong><span class="hero__item-text">на строительство,
+                                ремонт, пуско-наладочные и монтажные работы, проектные и изыскательные работы</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </p>
+                            </li>
+                            <li class="hero__item" data-index="4"><strong>Подготовим отчетные документы на выполненные работы:</strong><span class="hero__item-text">
+                                КС-2, КС-3, КС-6а, КС-11, М-29, КС-6а</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </p>
+                            </li>
+                            <li class="hero__item" data-index="5"><strong>Применяем нормативные базы:</strong> <span class="hero__item-text">ФЕР, ТСНБ, МРР, СБЦ,
+                                РСС, НЦС</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </p>
+                            </li>
+                            <li class="hero__item" data-index="6"><strong>Составляем сводные и объектные сметы</strong></li>
                         </ul>
                         <div class="hero__promotion">
                             <p class="hero__text text --s">Акция:<b> при стоимости работ по расчету сметы от 10 000,00 руб.
@@ -301,5 +326,35 @@
         </div>
     </footer>
 </body>
+
+<script>
+    var list = document.querySelector('.hero__list');
+
+    const listClickHanlder = (e) => {
+        var item = e.target.closest('.hero__item');
+            if (!item || !list.contains(item)) return;
+
+            var isOpen = item.classList.contains('--open');
+
+            // Close any other open items
+            var opened = list.querySelectorAll('.hero__item.--open');
+            opened.forEach(function (it) {
+                if (it !== item) it.classList.remove('--open');
+            });
+
+            // Toggle clicked item (open if it was closed, close if open)
+            item.classList.toggle('--open', !isOpen);
+    }
+
+    const onMount = () => {
+        if (!list) return;
+        list.addEventListener('click', listClickHanlder);
+    }
+
+    onMount();
+
+
+    // list.removeEvenetListener('click', listClickHanlder);
+</script>
 
 </html>
