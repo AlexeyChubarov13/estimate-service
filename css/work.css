@@ -84,3 +84,25 @@
     border-left: 0.3125rem solid #FF5721;
     padding: 1.625rem 2.9375rem; 
 }
+
+.work__item-scroll {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .work__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .work__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work__description {
+        border-right: 0.3125rem solid #FF5721;
+        border-left: none;
+    }
+}

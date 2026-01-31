@@ -42,11 +42,11 @@
     font-size: 3rem;
     line-height: 3.5rem;
 
-    /* @media screen (max-width: 376px) {
+    /* @media screen (max-width: 23.5rem) {
         margin-top: 1.375rem;
         margin-bottom: 10.1rem;
         font-weight: 500;
-        font-size: 10px;
+        font-size: 0.625rem;
         line-height: 3.5rem;
     } */
 }
@@ -171,7 +171,7 @@
     .hero__notepad-mobile {
         display: block;
         position: absolute;
-        width: 310px;
+        width: 19.375rem;
         background-color: #F4F5F7;
         right: 0;
         top: 0;
@@ -186,6 +186,7 @@
     .hero {
         display: flex;
         flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     .hero__title {
@@ -194,19 +195,20 @@
 
     .hero__logo {
         display: block;
-        width: 96px;
-        height: 32px;
-        margin-top: 25px;
-        margin-left: 20px;
+        width: 6rem;
+        height: 2rem;
+        margin-top: 1.5625rem;
+        margin-left: 1.25rem;
     }
 
     .container {
-        margin-left: 20px;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
     }
 
     .hero__description-title {
-        width: 246px;
-        margin-top: 55px;
+        width: 15.375rem;
+        margin-top: 3.4375rem;
     }
 
     .hero__list {
@@ -227,6 +229,8 @@
         align-items: center;
         background-color: #FFFFFF;
         margin: 0;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
         padding: 10.5rem 3.375rem 10.25rem;
         border-radius: 0;
         width: fit-content;
@@ -263,6 +267,10 @@
         display: none;
     }
 
+    .hero__promotion-footer {
+        bottom: 20%;
+    }
+
     .hero__tag {
         right: calc(-50% + 0.5rem);
         top: -3.125rem;
@@ -271,9 +279,9 @@
     }
 
     .hero__tag-vector {
-        font-size: 4.9rem;
-        width: 1.7em;
-        height: 0.9em;
+        font-size: 3.9rem;
+        /* width: 1.7em;
+        height: 0.9em; */
     }
 
     .hero__tag-vector circle{
