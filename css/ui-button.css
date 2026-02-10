@@ -37,3 +37,10 @@
     color: #FFD900;
     box-shadow: 0 0 0 0.125rem #222222;
 } 
+
+@media (max-width: 448px) {
+    .button {
+        width: 15rem;
+        height: 4rem;
+    }
+}

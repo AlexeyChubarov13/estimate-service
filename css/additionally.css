@@ -99,3 +99,77 @@
 .additionally__card:nth-child(2) {
     padding-bottom: 5rem;
 }
+
+@media (max-width: 768px) {
+    .additionally {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .additionally__branch {
+        display: none;
+    }
+
+    .additionally__wrapper {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+
+    .additionally__card {
+        height: auto;
+        min-height: 0;
+    }
+
+    .additionally__cost-wrapper {
+        min-height: 0;
+    }
+
+    .additionally__list {
+        display: flex;
+        flex-direction: column;
+    }
+        /* аккордеоны на адд */
+    .additionally__cost-list {
+        min-height: 20rem;
+        max-height: 20rem;
+        margin-top: 1.5rem;
+        height: auto; 
+        transition: min-height 0.32s ease-in-out, max-height 0.32s ease-in-out;
+        will-change: height;   /*вызов аппаратного ускорения */
+        overflow: hidden;
+    }
+
+    .additionally__list-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .additionally__item-scroll {
+        display: flex;
+        align-items: start;
+        width: 100%;
+        gap: 0.5rem;
+        opacity: 0.56;
+    }
+
+    .additionally__item-scroll-icon {
+        transform: rotate(90deg);
+        color: #222222;
+        opacity: 0.56;
+    }
+
+    /* Accordion: open state */
+    .additionally__list-wrapper.--open .additionally__cost-list {
+        min-height: 0;
+        max-height: 0;
+    }
+
+    .additionally__list-wrapper.--open .additionally__item-scroll-icon {
+        transform: rotate(-90deg);
+        opacity: 0.9;
+    }
+
+    .additionally__item {
+        cursor: pointer;
+    }
+}

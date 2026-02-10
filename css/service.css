@@ -194,9 +194,12 @@
     }
 
     .service__cost-list {
-        height: 0; 
-        transition: height 0.32s ease-in-out;
-        will-change: height;   /*вызов аппаратного ускорения */
+        min-height: 0;
+        max-height: 0;
+        margin-top: 1.5rem;
+        height: auto; 
+        transition: max-height 0.32s ease-in-out;
+        will-change: height, max-height;   /*вызов аппаратного ускорения */
         overflow: hidden;
     }
 
@@ -220,7 +223,7 @@
 
     /* Accordion: open state */
     .service__list-wrapper.--open .service__cost-list {
-        height: auto;
+        max-height: 25rem;
     }
 
     .service__list-wrapper.--open .service__item-scroll-icon {
@@ -228,7 +231,47 @@
         opacity: 0.9;
     }
 
-    .hero__item {
+    .service__item {
         cursor: pointer;
+    }
+}
+
+@media (max-width: 448px) {
+
+    .service__title {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .service__cost-subtitle {
+        font-size: 1rem;
+    }
+
+    .service__item-scroll {
+        font-size: 0.75rem;
+        position: relative;
+    }
+
+    .service__item-scroll-icon {
+        position: absolute;
+        left: 4.7rem;
+        top: -0.1875rem;
+        width: 1rem;
+    }
+
+    .service__text {
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+    }
+
+    .service__container-title {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    .service__container-text {
+        font-size: 0.75rem;
+        line-height: 1.5rem;
     }
 }

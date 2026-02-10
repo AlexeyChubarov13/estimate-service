@@ -104,5 +104,59 @@
     .work__description {
         border-right: 0.3125rem solid #FF5721;
         border-left: none;
+        height: auto;
     }
+
+    .work__description-text {
+        margin-top: 1.25rem;
+    }
+
+    .work__item-scroll {
+        display: flex;
+        align-items: start;
+        position: relative;
+        font-size: 0.75rem;
+        margin-top: 1.25rem;
+        gap: 0.5rem;
+        opacity: 0.56;
+    }
+
+    .work__description-container {
+        height: auto;
+        max-height: 0;
+        transition: min-height 0.32s ease-in-out, max-height 0.32s ease-in-out;
+        will-change: height;   /*вызов аппаратного ускорения */
+        overflow: hidden;
+    }
+
+    .work__item-scroll-icon {
+        position: absolute;
+        left: 4.7rem;
+        top: -0.1875rem;
+        width: 1rem;
+        transform: rotate(90deg);
+        color: #222222;
+        opacity: 0.56;
+    }
+
+    /* Accordion: open state */
+    .work__description-wrapper.--open .work__description-container {
+        min-height: 0;
+        max-height: 25rem;
+    }
+
+    .work__description-wrapper.--open .work__item-scroll-icon {
+        transform: rotate(-90deg);
+        opacity: 0.9;
+    }
+
+    .work__item {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 448px) {
+
+    
+
 }
