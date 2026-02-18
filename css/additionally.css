@@ -21,13 +21,6 @@
     padding-bottom: 130%;
 }
 
-.additionally__wrapper {
-    display: block;
-    position: relative;
-    align-items: center;
-    max-width: 67rem;
-}
-
 .additionally__title {
     margin-top: 7rem;
     margin-bottom: 5rem;
@@ -37,13 +30,10 @@
 .additionally__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
     gap: 2rem;
     position: relative;
     z-index: 1;
-}
-
-.additionally__list:nth-child(2) {
-    min-height: 61.5rem;
 }
 
 .additionally__card {
@@ -51,7 +41,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2.5rem;
+    padding: 1.5rem;
     gap: 3rem;
     min-height: 33.75rem;
     background-color: #FFFFFF;
@@ -75,19 +65,28 @@
     opacity: 1;
 }
 
+.additionally__cost-subtitle {
+    min-height: 4em;
+    position: relative;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
 .additionally__cost-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 35.5rem;
+    flex: 1;
+    gap: 1rem;
 }
 
 .additionally__cost-list {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    min-height: 25rem;
+    flex: 1;
     gap: 1.5rem;
 }
 
@@ -96,8 +95,9 @@
     height: 3.5rem;
 }
 
-.additionally__card:nth-child(2) {
-    padding-bottom: 5rem;
+
+.additionally__item-scroll {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -110,14 +110,19 @@
         display: none;
     }
 
-    .additionally__wrapper {
-        margin-left: 1.25rem;
-        margin-right: 1.25rem;
-    }
-
     .additionally__card {
         height: auto;
         min-height: 0;
+    }
+
+    .additionally__cost-subtitle::before {
+        content: "";
+        width: 33px;
+        height: 4px;
+        position: absolute;
+        top: 5.5rem;
+        background-color:  #FFD900;
+        z-index: 3;
     }
 
     .additionally__cost-wrapper {
@@ -130,8 +135,8 @@
     }
         /* аккордеоны на адд */
     .additionally__cost-list {
-        min-height: 20rem;
-        max-height: 20rem;
+        min-height: 0;
+        max-height: 0;
         margin-top: 1.5rem;
         height: auto; 
         transition: min-height 0.32s ease-in-out, max-height 0.32s ease-in-out;
@@ -159,12 +164,11 @@
     }
 
     /* Accordion: open state */
-    .additionally__list-wrapper.--open .additionally__cost-list {
-        min-height: 0;
-        max-height: 0;
+    .additionally__cost-wrapper.--open .additionally__cost-list {
+        max-height: 20rem;
     }
 
-    .additionally__list-wrapper.--open .additionally__item-scroll-icon {
+    .additionally__cost-wrapper.--open .additionally__item-scroll-icon {
         transform: rotate(-90deg);
         opacity: 0.9;
     }

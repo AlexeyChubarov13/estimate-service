@@ -2,12 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     background-color: #F4F5F7;
 }
 
 .work__wrapper {
-    width: 100%;
-    max-width: 67rem;
     padding-top: 4.375rem;
 }
 
@@ -90,11 +89,6 @@
 }
 
 @media (max-width: 768px) {
-
-    .work__wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
     .work__container {
         display: flex;
