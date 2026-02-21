@@ -41,14 +41,6 @@
     font-weight: 500;
     font-size: 3rem;
     line-height: 3.5rem;
-
-    /* @media screen (max-width: 23.5rem) {
-        margin-top: 1.375rem;
-        margin-bottom: 10.1rem;
-        font-weight: 500;
-        font-size: 0.625rem;
-        line-height: 3.5rem;
-    } */
 }
 
 .hero__description-title {
@@ -99,12 +91,6 @@
     padding: 1.5rem 3.375rem 3.25rem;
     width: fit-content;
 }
-
-/* .hero__text {
-    font-family: "Roboto";
-    font-size: 0.875rem;
-    line-height: 1.0256rem;
-} */
 
 .hero__promotion-footer {
     position: absolute;
@@ -281,5 +267,12 @@
 
     .hero__tag-vector circle{
         fill: #222222;
+    }
+}
+
+@media screen and (max-width: 448px) {
+
+    .hero__description-title {
+        font-size: 1.5rem;
     }
 }

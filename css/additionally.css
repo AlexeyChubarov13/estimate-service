@@ -36,70 +36,6 @@
     z-index: 1;
 }
 
-.additionally__card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1.5rem;
-    gap: 3rem;
-    min-height: 33.75rem;
-    background-color: #FFFFFF;
-    box-shadow: 0 1rem 3.5rem rgba(0, 0, 0, 0.08);
-}
-
-.additionally__card::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    box-shadow: inset 0 0 0 0.5rem #FFD900;
-    border-radius: 0.5rem;
-    opacity: 0;
-    z-index: -2;
-}
-
-.additionally__card:hover::before{
-    opacity: 1;
-}
-
-.additionally__cost-subtitle {
-    min-height: 4em;
-    position: relative;
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 2rem;
-}
-
-.additionally__cost-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    gap: 1rem;
-}
-
-.additionally__cost-list {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    flex: 1;
-    gap: 1.5rem;
-}
-
-.additionally__cost-button {
-    width: 13.75rem;
-    height: 3.5rem;
-}
-
-
-.additionally__item-scroll {
-    display: none;
-}
-
 @media (max-width: 768px) {
     .additionally {
         display: flex;
@@ -110,70 +46,16 @@
         display: none;
     }
 
-    .additionally__card {
-        height: auto;
-        min-height: 0;
-    }
 
-    .additionally__cost-subtitle::before {
-        content: "";
-        width: 33px;
-        height: 4px;
-        position: absolute;
-        top: 5.5rem;
-        background-color:  #FFD900;
-        z-index: 3;
-    }
-
-    .additionally__cost-wrapper {
-        min-height: 0;
-    }
 
     .additionally__list {
         display: flex;
         flex-direction: column;
     }
-        /* аккордеоны на адд */
-    .additionally__cost-list {
-        min-height: 0;
-        max-height: 0;
-        margin-top: 1.5rem;
-        height: auto; 
-        transition: min-height 0.32s ease-in-out, max-height 0.32s ease-in-out;
-        will-change: height;   /*вызов аппаратного ускорения */
-        overflow: hidden;
-    }
+
 
     .additionally__list-wrapper {
         width: 100%;
         height: auto;
-    }
-
-    .additionally__item-scroll {
-        display: flex;
-        align-items: start;
-        width: 100%;
-        gap: 0.5rem;
-        opacity: 0.56;
-    }
-
-    .additionally__item-scroll-icon {
-        transform: rotate(90deg);
-        color: #222222;
-        opacity: 0.56;
-    }
-
-    /* Accordion: open state */
-    .additionally__cost-wrapper.--open .additionally__cost-list {
-        max-height: 20rem;
-    }
-
-    .additionally__cost-wrapper.--open .additionally__item-scroll-icon {
-        transform: rotate(-90deg);
-        opacity: 0.9;
-    }
-
-    .additionally__item {
-        cursor: pointer;
     }
 }

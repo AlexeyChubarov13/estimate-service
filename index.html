@@ -7,29 +7,29 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Смета-сервис</title>
     <script src="https://api-maps.yandex.ru/v3/?apikey=bc73287b-2df9-495a-bb92-4779e237ca0d&lang=ru_RU"></script>
-        <script>
-            initMap();
-    
-            async function initMap() {
-                await ymaps3.ready;
-    
-                const {YMap, YMapDefaultSchemeLayer} = ymaps3;
-    
-                const map = new YMap(
-                    document.getElementById('map'),
-                    {
-                        location: {
-                            center: [37.541504, 55.836995],
-                            zoom: 15
-                        },
-                        behaviors: ['drag'] 
-                    }
-                );
-    
-                map.addChild(new YMapDefaultSchemeLayer());
+    <script>
+        initMap();
 
-            }
-        </script>
+        async function initMap() {
+            await ymaps3.ready;
+
+            const { YMap, YMapDefaultSchemeLayer } = ymaps3;
+
+            const map = new YMap(
+                document.getElementById('map'),
+                {
+                    location: {
+                        center: [37.541504, 55.836995],
+                        zoom: 15
+                    },
+                    behaviors: ['drag']
+                }
+            );
+
+            map.addChild(new YMapDefaultSchemeLayer());
+
+        }
+    </script>
 </head>
 
 <body>
@@ -46,60 +46,83 @@
                 </div>
             </div>
             <div class="hero__logo">
-                    <img src="img/logo.png" class="hero__logo-pic" alt="Логотип">
+                <img src="img/logo.png" class="hero__logo-pic" alt="Логотип">
             </div>
 
             <div class="container">
                 <div class="hero__inner container">
                     <h1 class="hero__title">Смета сервис</h1>
-                    <div class="hero__description-title">
+                    <div class="hero__description-title title">
                         <strong>Разработаем и защитим смету</strong> для вашего проекта
                     </div>
-                    <p class="hero__description-text text --xl">Составим отчетную документацию. Возьмем Вашу компанию на сметный
+                    <p class="hero__description-text text --xl">Составим отчетную документацию. Возьмем Вашу компанию на
+                        сметный
                         аутсорсинг.</p>
                     <div class="hero__wrapper">
                         <ul class="hero__list">
-                            <li class="hero__item"><strong>Работаем под ключ:</strong><span class="hero__item-text">от заключения договора - до сдачи
-                                заказчику, сопровождаем заказчика до получения положительного заключения государственной
-                                экспертизы (при необходимости)</span>
-                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <li class="hero__item"><strong>Работаем под ключ:</strong><span class="hero__item-text">от
+                                    заключения договора - до сдачи
+                                    заказчику, сопровождаем заказчика до получения положительного заключения
+                                    государственной
+                                    экспертизы (при необходимости)</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20"
+                                        class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </p>
                             </li>
-                            <li class="hero__item"><strong>Рассчитываем сметы для разных целей:</strong><span class="hero__item-text">коммерческие,
-                                укрупненные для инвестиций, сметы для участия в тендерах и для работы с бюджетными
-                                организациями</span>
-                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <li class="hero__item"><strong>Рассчитываем сметы для разных целей:</strong><span
+                                    class="hero__item-text">коммерческие,
+                                    укрупненные для инвестиций, сметы для участия в тендерах и для работы с бюджетными
+                                    организациями</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20"
+                                        class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </p>
                             </li>
-                            <li class="hero__item"><strong>Составляем сметы любой сложности:</strong><span class="hero__item-text">на строительство,
-                                ремонт, пуско-наладочные и монтажные работы, проектные и изыскательные работы</span>
-                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <li class="hero__item"><strong>Составляем сметы любой сложности:</strong><span
+                                    class="hero__item-text">на строительство,
+                                    ремонт, пуско-наладочные и монтажные работы, проектные и изыскательные работы</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20"
+                                        class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </p>
                             </li>
-                            <li class="hero__item"><strong>Подготовим отчетные документы на выполненные работы:</strong><span class="hero__item-text">
-                                КС-2, КС-3, КС-6а, КС-11, М-29, КС-6а</span>
-                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <li class="hero__item"><strong>Подготовим отчетные документы на выполненные
+                                    работы:</strong><span class="hero__item-text">
+                                    КС-2, КС-3, КС-6а, КС-11, М-29, КС-6а</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20"
+                                        class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </p>
                             </li>
-                            <li class="hero__item"><strong>Применяем нормативные базы:</strong> <span class="hero__item-text">ФЕР, ТСНБ, МРР, СБЦ,
-                                РСС, НЦС</span>
-                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20" class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <li class="hero__item"><strong>Применяем нормативные базы:</strong> <span
+                                    class="hero__item-text">ФЕР, ТСНБ, МРР, СБЦ,
+                                    РСС, НЦС</span>
+                                <p class="hero__item-scroll">Подробнее <svg width="20" height="20"
+                                        class="hero__item-scroll-icon" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </p>
                             </li>
                             <li class="hero__item"><strong>Составляем сводные и объектные сметы</strong></li>
                         </ul>
                         <div class="hero__promotion">
-                            <p class="hero__text text --s">Акция:<b> при стоимости работ по расчету сметы от 10 000,00 руб.
+                            <p class="hero__text text --s">Акция:<b> при стоимости работ по расчету сметы от 10 000,00
+                                    руб.
                                     КС-2, КС-3 в подарок.</b>
                             </p>
                             <div class="hero__promotion-footer">
@@ -107,11 +130,15 @@
                                     <button class="hero__button button --black">Заказать</button>
                                 </div>
                                 <div class="hero__tag">
-                                    <svg class="hero__tag-vector" width="174" height="79" viewBox="0 0 174 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M22.4689 5.93556C24.2386 3.77885 27.004 2.69983 29.7667 3.08811L165.21 22.1234C169.585 22.7383 172.633 26.7836 172.018 31.1589L166.451 70.7696C165.837 75.1449 161.791 78.1933 157.416 77.5784L21.8021 58.5191C19.1326 58.1439 16.8316 56.4495 15.6809 54.0117L5.91443 33.3198C4.59516 30.5248 5.00399 27.2198 6.96459 24.8304L22.4689 5.93556Z" fill="#FDD93E"/>
-                                        <circle cx="15.6409" cy="30.3879" r="4" transform="rotate(8 15.6409 30.3879)" fill="#F8F8F8"/>
+                                    <svg class="hero__tag-vector" width="174" height="79" viewBox="0 0 174 79"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.4689 5.93556C24.2386 3.77885 27.004 2.69983 29.7667 3.08811L165.21 22.1234C169.585 22.7383 172.633 26.7836 172.018 31.1589L166.451 70.7696C165.837 75.1449 161.791 78.1933 157.416 77.5784L21.8021 58.5191C19.1326 58.1439 16.8316 56.4495 15.6809 54.0117L5.91443 33.3198C4.59516 30.5248 5.00399 27.2198 6.96459 24.8304L22.4689 5.93556Z"
+                                            fill="#FDD93E" />
+                                        <circle cx="15.6409" cy="30.3879" r="4" transform="rotate(8 15.6409 30.3879)"
+                                            fill="#F8F8F8" />
                                     </svg>
-                                        
+
                                     <p class="hero__tag-text">Стоимость <br><b>от 4 000 руб.</b></p>
                                 </div>
                             </div>
@@ -127,66 +154,82 @@
                 </div>
             </div>
             <div class="service__wrapper container">
-                <h2 class="service__title">Стоимость наших услуг</h2>
+                <h2 class="service__title title">Стоимость наших услуг</h2>
                 <div class="service__container-list">
-                    <div class="service__card">
-                        <h4 class="service__cost-subtitle">По объектам гражданского и производственного назначения</h4>
-                        <div class="service__cost-wrapper">
-                            <div class="service__list-wrapper">
-                                <p class="service__item-scroll">Подробнее <svg width="20" height="20" class="service__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </p>
-                                <ul class="service__cost-list">
-                                    <li class="service__cost-item">Минимальная сумма заказа по общестроительным работам – 4 000 рублей;</li>
-                                    <li class="service__cost-item">До 1 млн. - 	1% от стоимости работ по смете;</li>
-                                    <li class="service__cost-item">Свыше 1 млн. – до 5 млн. – 	0,8% от стоимости работ по смете;</li>
-                                    <li class="service__cost-item">Свыше 5 млн. – до 10 млн. – 	0,6% от стоимости работ по смете;</li>
-                                    <li class="service__cost-item">Свыше 10 млн. – 0,5% от стоимости работ по смете;</li>
-                                </ul>
-                            </div>
-                            <button class="service__cost-button button --yellow">Заказать</button>
+                    <div class="ui-card">
+                        <h4 class="ui-card__title">По объектам гражданского и производственного назначения</h4>
+                        <div class="ui-card__inner">
+
+                            <p class="ui-card__head">Подробнее <svg width="20" height="20"
+                                    class="ui-card__head-icon" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </p>
+                            <ul class="ui-card__body">
+                                <li class="ui-card__body-item">Минимальная сумма заказа по общестроительным работам –
+                                    4 000 рублей;</li>
+                                <li class="ui-card__body-item">До 1 млн. - 1% от стоимости работ по смете;</li>
+                                <li class="ui-card__body-item">Свыше 1 млн. – до 5 млн. – 0,8% от стоимости работ по
+                                    смете;</li>
+                                <li class="ui-card__body-item">Свыше 5 млн. – до 10 млн. – 0,6% от стоимости работ по
+                                    смете;</li>
+                                <li class="ui-card__body-item">Свыше 10 млн. – 0,5% от стоимости работ по смете;</li>
+                            </ul>
+                            <button class="ui-card__button button --yellow">Заказать</button>
                         </div>
                     </div>
-                    <div class="service__card">
-                        <h4 class="service__cost-subtitle">По специальным, технически сложным и уникальным объектам</h4>
-                        <div class="service__cost-wrapper">
-                            <div class="service__list-wrapper">
-                                <p class="service__item-scroll">Подробнее <svg width="20" height="20" class="service__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </p>
-                                <ul class="service__cost-list">
-                                    <li class="service__cost-item">До 1 млн. - 3% от стоимости работ по смете;</li>
-                                    <li class="service__cost-item">Свыше 1 млн. – до 10 млн. –		2% от стоимости работ по смете;</li>
-                                    <li class="service__cost-item">Свыше 10 млн. – до 100 млн. –		1% от стоимости работ по смете;</li>
-                                    <li class="service__cost-item">Свыше 100 млн. –	0,5% от стоимости работ по смете;</li>
-                                </ul>
-                            </div>
-                            <button class="service__cost-button button --yellow">Заказать</button>
+                    <div class="ui-card">
+                        <h4 class="ui-card__title">По специальным, технически сложным и уникальным объектам</h4>
+                        <div class="ui-card__inner">
+
+                            <p class="ui-card__head">Подробнее <svg width="20" height="20"
+                                    class="ui-card__head-icon" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </p>
+                            <ul class="ui-card__body">
+                                <li class="ui-card__body-item">До 1 млн. - 3% от стоимости работ по смете;</li>
+                                <li class="ui-card__body-item">Свыше 1 млн. – до 10 млн. – 2% от стоимости работ по
+                                    смете;</li>
+                                <li class="ui-card__body-item">Свыше 10 млн. – до 100 млн. – 1% от стоимости работ по
+                                    смете;</li>
+                                <li class="ui-card__body-item">Свыше 100 млн. – 0,5% от стоимости работ по смете;</li>
+                            </ul>
+                            <button class="ui-card__button button --yellow">Заказать</button>
                         </div>
                     </div>
-                    <div class="service__card">
-                        <h4 class="service__cost-subtitle">Дополнительные <br> услуги</h4>
-                        <div class="service__cost-wrapper">
-                            <div class="service__list-wrapper">
-                                <p class="service__item-scroll">Подробнее <svg width="20" height="20" class="service__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </p>
-                                <ul class="service__cost-list">
-                                    <li class="service__cost-item">Проверка и экспертиза сметной документации - с коэфф. 0,5;</li>
-                                    <li class="service__cost-item">С составлением дефектных ведомостей (выезд оплачивается отдельно) - с коэфф.1,5;</li>
-                                    <li class="service__cost-item">Составление дефектных ведомостей (без составления сметы) рассчитывается исходя из объема работ и места нахождения объекта: 1 выезд 1 специалиста – 7 000,00 рублей + 15 руб./км свыше 10 км от МКАД.</li>
-                                </ul>
-                            </div>
-                            <button class="service__cost-button button --yellow">Заказать</button>
+                    <div class="ui-card">
+                        <h4 class="ui-card__title">Дополнительные <br> услуги</h4>
+                        <div class="ui-card__inner">
+
+                            <p class="ui-card__head">Подробнее <svg width="20" height="20"
+                                    class="ui-card__head-icon" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </p>
+                            <ul class="ui-card__body">
+                                <li class="ui-card__body-item">Проверка и экспертиза сметной документации - с коэфф.
+                                    0,5;</li>
+                                <li class="ui-card__body-item">С составлением дефектных ведомостей (выезд оплачивается
+                                    отдельно) - с коэфф.1,5;</li>
+                                <li class="ui-card__body-item">Составление дефектных ведомостей (без составления сметы)
+                                    рассчитывается исходя из объема работ и места нахождения объекта: 1 выезд 1
+                                    специалиста – 7 000,00 рублей + 15 руб./км свыше 10 км от МКАД.</li>
+                            </ul>
+                            <button class="ui-card__button button --yellow">Заказать</button>
                         </div>
                     </div>
                 </div>
                 <p class="service__text">Проектно-изыскательские работы – 4 000,00 рублей (за раздел сметы);</p>
                 <div class="service__container">
-                    <h3 class="service__container-title">Расчеты производятся с применением сметных программных комплексов «Смета ру» и «Турбо сметчик».
+                    <h3 class="service__container-title">Расчеты производятся с применением сметных программных
+                        комплексов «Смета ру» и «Турбо сметчик».
                         Для получения стоимости по вашему проекту – напишите нам
                         Написать
                     </h3>
@@ -197,27 +240,40 @@
         </section>
         <section class="work">
             <div class="work__wrapper container">
-                <h2 class="work__title">Как мы работаем</h2>
+                <h2 class="work__title title">Как мы работаем</h2>
                 <div class="work__container">
                     <ol class="work__list">
                         <li class="work__item">Напишите или позвоните нам</li>
                         <li class="work__item">Совместно с Вами мы согласуем удобный Вам формат работы.</li>
                         <li class="work__item">Подготовьте исходные данные для составления сметы<br><br>
-                            <span class="text --sm">(проектные решения, осмечиваемые тома с ведомостями материалов, спецификацией 
-                            оборудования и другими необходимыми данными).</span>
+                            <span class="text --sm">(проектные решения, осмечиваемые тома с ведомостями материалов,
+                                спецификацией
+                                оборудования и другими необходимыми данными).</span>
                         </li>
                     </ol>
                     <div class="work__description">
-                        <p class="work__description-text text --orange">Обратите внимание что:</p> 
+                        <p class="work__description-text text --orange">Обратите внимание что:</p>
                         <div class="work__description-wrapper">
-                            <p class="work__description-text text --m">При составлении сметы на текущий или выборочный ремонт, нам будет достаточно дефектных ведомостей, если у вас их нет - наши специалисты смогут их подготовить;</p>
-                            
+                            <p class="work__description-text text --m">При составлении сметы на текущий или выборочный
+                                ремонт, нам будет достаточно дефектных ведомостей, если у вас их нет - наши специалисты
+                                смогут их подготовить;</p>
+
                             <div class="work__description-container">
-                                <p class="work__description-text text --m">При составлении дефектной ведомости на ремонтные работы, работы по обследованию конструкций и выдача рекомендаций по принятию технических и проектных решений по состоянию конструктивных элементов и целесообразности их инструментального обследования или замены, в объем работ по составлению дефектовки не входит.</p> 
-                                <p class="work__description-text text --m">Заказчик несет ответственность за конечный результат в случае неправильного проектного решения, отклонения от утвержденного проекта или технического задания. Данные отклонения должны фиксироваться дополнительными соглашениями к договору на разработку сметы!</p> 
+                                <p class="work__description-text text --m">При составлении дефектной ведомости на
+                                    ремонтные работы, работы по обследованию конструкций и выдача рекомендаций по
+                                    принятию технических и проектных решений по состоянию конструктивных элементов и
+                                    целесообразности их инструментального обследования или замены, в объем работ по
+                                    составлению дефектовки не входит.</p>
+                                <p class="work__description-text text --m">Заказчик несет ответственность за конечный
+                                    результат в случае неправильного проектного решения, отклонения от утвержденного
+                                    проекта или технического задания. Данные отклонения должны фиксироваться
+                                    дополнительными соглашениями к договору на разработку сметы!</p>
                             </div>
-                            <p class="work__item-scroll">Подробнее <svg width="20" height="20" class="work__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <p class="work__item-scroll">Подробнее <svg width="20" height="20"
+                                    class="work__item-scroll-icon" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </p>
                         </div>
@@ -232,53 +288,72 @@
                 </div>
             </div>
             <div class="additionally__wrapper container">
-                <h2 class="additionally__title">Дополнительные услуги</h2>
+                <h2 class="additionally__title title">Дополнительные услуги</h2>
                 <div class="additionally__list-wrapper">
                     <div class="additionally__list">
-                        <div class="additionally__card">
-                            <h4 class="additionally__cost-subtitle">Сводные, объектные сметы, проверка и перевод в другие СНБ</h4>
-                            <div class="additionally__cost-wrapper">
-                                <p class="additionally__item-scroll">Подробнее <svg width="20" height="20" class="additionally__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <div class="ui-card">
+                            <h4 class="ui-card__title">Сводные, объектные сметы, проверка и перевод в другие СНБ</h4>
+                            <div class="ui-card__inner">
+                                <p class="ui-card__head">Подробнее <svg width="20" height="20"
+                                        class="ui-card__head-icon" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </p>
-                                <ul class="additionally__cost-list">
-                                    <li class="additionally__cost-item">Составление сводных смет – 5 000,00 руб.</li>
-                                    <li class="additionally__cost-item">Составление объектных смет - 4 000,00 руб.</li>
-                                    <li class="additionally__cost-item">Проверка смет с выдачей заключения - с коэфф 0,5 от стоимости составления;</li>
-                                    <li class="additionally__cost-item">Перевод смет в любую сметно-нормативную базу - 40 руб. за позицию или материал;</li>
+                                <ul class="ui-card__body">
+                                    <li class="ui-card__body-item">Составление сводных смет – 5 000,00 руб.</li>
+                                    <li class="ui-card__body-item">Составление объектных смет - 4 000,00 руб.</li>
+                                    <li class="ui-card__body-item">Проверка смет с выдачей заключения - с коэфф 0,5 от
+                                        стоимости составления;</li>
+                                    <li class="ui-card__body-item">Перевод смет в любую сметно-нормативную базу - 40
+                                        руб. за позицию или материал;</li>
                                 </ul>
-                                <button class="additionally__cost-button button --yellow">Заказать</button>
+                                <button class="ui-card__button button --yellow">Заказать</button>
                             </div>
                         </div>
-                        <div class="additionally__card">
-                            <h4 class="additionally__cost-subtitle">Подготовка исполнительной документации:</h4>
-                            <div class="additionally__cost-wrapper">
-                                <p class="additionally__item-scroll">Подробнее <svg width="20" height="20" class="additionally__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <div class="ui-card">
+                            <h4 class="ui-card__title">Подготовка исполнительной документации:</h4>
+                            <div class="ui-card__inner">
+                                <p class="ui-card__head">Подробнее <svg width="20" height="20"
+                                        class="ui-card__head-icon" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </p>
-                                <ul class="additionally__cost-list">
-                                    <li class="additionally__cost-item">•	Акты выполненных работ по форме КС-2- от 2000,00 руб. (в случае, когда сметы составлены нашей компанией);</li>
-                                    <li class="additionally__cost-item">•	Справка о стоимости выполненных работ по форме КС-3; - от 2000,00 руб. (в случае, когда сметы составлены нашей компанией);</li>
-                                    <li class="additionally__cost-item">•	Накопительный журнал учета выполненных работ по форме КС-6а; - от 2000,00 руб. (в случае, когда сметы составлены нашей компанией);</li>
-                                    <li class="additionally__cost-item">•	Ведомость списания материалов по форме М-29 – от 2000,00 руб. (в случае, когда сметы составлены нашей компанией);</li>
+                                <ul class="ui-card__body">
+                                    <li class="ui-card__body-item">• Акты выполненных работ по форме КС-2- от 2000,00
+                                        руб. (в случае, когда сметы составлены нашей компанией);</li>
+                                    <li class="ui-card__body-item">• Справка о стоимости выполненных работ по форме
+                                        КС-3; - от 2000,00 руб. (в случае, когда сметы составлены нашей компанией);</li>
+                                    <li class="ui-card__body-item">• Накопительный журнал учета выполненных работ по
+                                        форме КС-6а; - от 2000,00 руб. (в случае, когда сметы составлены нашей
+                                        компанией);</li>
+                                    <li class="ui-card__body-item">• Ведомость списания материалов по форме М-29 – от
+                                        2000,00 руб. (в случае, когда сметы составлены нашей компанией);</li>
                                 </ul>
-                                <button class="additionally__cost-button button --yellow">Заказать</button>
+                                <button class="ui-card__button button --yellow">Заказать</button>
                             </div>
                         </div>
-                        <div class="additionally__card">
-                            <h4 class="additionally__cost-subtitle">Комплексное обслуживание Вашей компании:</h4>
-                            <div class="additionally__cost-wrapper">
-                                <p class="additionally__item-scroll">Подробнее <svg width="20" height="20" class="additionally__item-scroll-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <div class="ui-card">
+                            <h4 class="ui-card__title">Комплексное обслуживание Вашей компании:</h4>
+                            <div class="ui-card__inner">
+                                <p class="ui-card__head">Подробнее <svg width="20" height="20"
+                                        class="ui-card__head-icon" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00001 4.66669L10.6667 7.33335L8.00001 10.0001" stroke="#222222"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </p>
-                                <ul class="additionally__cost-list">
-                                    <li class="additionally__cost-item">Сметный аутсорсинг (составление смет, КС2,3,6,11, М-29,  корректировка, реестры договоров, смет, актов выполненных работ) – от 100 тыс.руб./месяц (до 20 смет)</li>
-                                    <li class="additionally__cost-item">Условия сметного аутсорсинга обсуждаются в индивидуальном порядке</li>
+                                <ul class="ui-card__body">
+                                    <li class="ui-card__body-item">Сметный аутсорсинг (составление смет, КС2,3,6,11,
+                                        М-29, корректировка, реестры договоров, смет, актов выполненных работ) – от 100
+                                        тыс.руб./месяц (до 20 смет)</li>
+                                    <li class="ui-card__body-item">Условия сметного аутсорсинга обсуждаются в
+                                        индивидуальном порядке</li>
                                 </ul>
-                                <button class="additionally__cost-button button --yellow">Заказать</button>
+                                <button class="ui-card__button button --yellow">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -286,32 +361,35 @@
             </div>
         </section>
         <section class="info">
-            <h2 class="info__title">Почему мы?</h2>
+            <h2 class="info__title title">Почему мы?</h2>
             <div class="info__wrapper container">
                 <div class="info__container">
                     <div class="info__container-image">
                         <img src="img/img-group-1.png" class="info__image" alt="Календарь">
                     </div>
-                    <p class="info__text"><strong>Соблюдаем сроки</strong> и быстро <br> вносим необходимые <br>правки.</p>
+                    <p class="info__text"><strong>Соблюдаем сроки</strong> и быстро <br> вносим необходимые <br>правки.
+                    </p>
                 </div>
                 <div class="info__container">
                     <div class="info__container-image">
                         <img src="img/img-group-2.png" class="info__image" alt="Календарь">
                     </div>
-                    <p class="info__text"><strong>Гарантируем согласование:</strong> в случае обоснованного отказа -<br> доработки за наш счёт!</p>
+                    <p class="info__text"><strong>Гарантируем согласование:</strong> в случае обоснованного отказа -<br>
+                        доработки за наш счёт!</p>
                 </div>
                 <div class="info__container">
                     <div class="info__container-image">
                         <img src="img/img-group-3.png" class="info__image" alt="Календарь">
                     </div>
-                    <p class="info__text"><strong>Предлагаем прозрачные <br>условия сотрудничества:</strong> Вы <br>знаете сколько и за что платите.</p>
+                    <p class="info__text"><strong>Предлагаем прозрачные <br>условия сотрудничества:</strong> Вы
+                        <br>знаете сколько и за что платите.</p>
                 </div>
             </div>
         </section>
-        <!-- <section class="description">
-            <div class="description__wrapper">
-                <h2 class="description__title">О компании</h2>
-                <p class="description__text"><b>Супе- смета</b> - Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько <br>
+        <section class="description">
+            <div class="description__wrapper container">
+                <h2 class="description__title title">О компании</h2>
+                <p class="description__text"><b>Супер- смета</b> - Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько <br>
                     абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык <br>
                     публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный <br>
                     универсальный код речей. Текст генерируется абзацами случайным образом
@@ -335,16 +413,16 @@
                     </div>
                 </div>
                 <div class="description__partners">
-                    <img src="img/partners-1.png" alt="Нефсегазстрой">
-                    <img src="img/partners-2.png" alt="Jeremias">
-                    <img src="img/partners-3.png" alt="Stins">
-                    <img src="img/partners-4.png" alt="Газпром">
-                    <img src="img/partners-5.png" alt="Yota">
-                    <img src="img/partners-6.png" alt="Май-foods">
+                    <img src="img/partners-1.png" class="description__partners-img" alt="Нефсегазстрой">
+                    <img src="img/partners-2.png" class="description__partners-img" alt="Jeremias">
+                    <img src="img/partners-3.png" class="description__partners-img" alt="Stins">
+                    <img src="img/partners-4.png" class="description__partners-img" alt="Газпром">
+                    <img src="img/partners-5.png" class="description__partners-img" alt="Yota">
+                    <img src="img/partners-6.png" class="description__partners-img" alt="Май-foods">
                 </div>
             </div>
         </section>
-        <section class="map">
+        <!-- <section class="map">
             <div id="map" class="map__addres"></div>
             <div class="map__info-wrapper">
                 <div class="map__info">
@@ -387,26 +465,6 @@
         });
     })();
 
-    (function () {
-        var lists = document.querySelectorAll('.service__list-wrapper');
-        if (!lists.length) return;
-
-        lists.forEach(function (wrapper) {
-            wrapper.addEventListener('click', function () {
-                var isOpen = wrapper.classList.contains('--open');
-
-                // закрываем остальные
-                lists.forEach(function (other) {
-                    if (other !== wrapper) {
-                        other.classList.remove('--open');
-                    }
-                });
-
-                // переключаем текущую
-                wrapper.classList.toggle('--open', !isOpen);
-            });
-        });
-    })();
 
     (function () {
         var lists = document.querySelectorAll('.work__description-wrapper');
@@ -430,7 +488,7 @@
     })();
 
     (function () {
-        var lists = document.querySelectorAll('.additionally__cost-wrapper');
+        var lists = document.querySelectorAll('.ui-card__inner');
         if (!lists.length) return;
 
         lists.forEach(function (wrapper) {

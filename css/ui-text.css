@@ -34,3 +34,23 @@
     font-weight: 700;
     line-height: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+
+    
+}
+
+@media screen and (max-width: 448px) {
+
+    .text.--xl {
+        font-size: 0.875rem;
+    }
+
+    .text.--s {
+        font-size: 1rem;
+    }
+
+    .text.--bigm {
+        font-size: 2rem;
+    }
+}
