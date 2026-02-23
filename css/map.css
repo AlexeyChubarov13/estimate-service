@@ -15,7 +15,6 @@
     position: absolute;
     top: 7rem;
     left: 25rem;
-
 }
 
 .map__info {
@@ -73,4 +72,26 @@
     margin-bottom: 0.5rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .map__info-wrapper {
+        left: 5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 448px) {
+
+    .map__info {
+        width: auto;
+        max-width: 27rem;
+        height: auto;
+    }
+
+    .map__info-wrapper {
+        left: 2rem;
+    }
 }
