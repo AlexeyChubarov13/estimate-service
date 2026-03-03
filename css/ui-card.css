@@ -52,11 +52,6 @@
     gap: 1.5rem;
 }
 
-.ui-card__button {
-    width: 13.75rem;
-    height: 3.5rem;
-}
-
 
 .ui-card__head {
     display: none;

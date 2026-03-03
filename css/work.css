@@ -112,6 +112,10 @@
         opacity: 0.56;
     }
 
+    .work__description-wrapper {
+        height: auto;
+    }
+
     .work__description-container {
         height: auto;
         max-height: 0;
@@ -121,10 +125,6 @@
     }
 
     .work__item-scroll-icon {
-        position: absolute;
-        left: 4.7rem;
-        top: -0.1875rem;
-        width: 1rem;
         transform: rotate(90deg);
         color: #222222;
         opacity: 0.56;
@@ -133,7 +133,7 @@
     /* Accordion: open state */
     .work__description-wrapper.--open .work__description-container {
         min-height: 0;
-        max-height: 25rem;
+        max-height: 45rem;
     }
 
     .work__description-wrapper.--open .work__item-scroll-icon {

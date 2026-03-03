@@ -1,0 +1,36 @@
+.partners {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.partners__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+}
+
+.partners__img-wrapper {
+    flex: 1;
+    width: 100%;
+}
+
+.partners__img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .partners__wrapper {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 448px) {
+
+    .partners__img {
+        width: 9.4rem;
+        height: 100%;
+    }
+}

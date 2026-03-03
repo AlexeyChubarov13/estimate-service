@@ -1,6 +1,8 @@
 .button {
     position: relative;
     border: none;
+    width: 13.75rem;
+    height: 3.5rem;
     border-radius: 4.5rem;
     font-family: "Proximanova-bold";
     font-size: 1.125rem;
@@ -39,9 +41,16 @@
     box-shadow: 0 0 0 0.125rem #222222;
 } 
 
+@media (max-width: 768px) {
+    .button {
+        width: 18rem;
+        height: 4rem;
+    }
+}
+
 @media (max-width: 448px) {
     .button {
-        width: 15rem;
+        width: 18rem;
         height: 4rem;
     }
 }
