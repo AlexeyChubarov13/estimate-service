@@ -21,3 +21,19 @@
     color: #bdbdbd;
     font-size: 0.875rem;
 }
+
+.logo-wrapper {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo-wrapper {
+        display: block;
+    }
+
+    .footer__container {
+        display: flex;
+        
+    }
+}
