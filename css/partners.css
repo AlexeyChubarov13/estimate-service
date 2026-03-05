@@ -11,12 +11,24 @@
 }
 
 .partners__img-wrapper {
+    position: relative;
     flex: 1;
     width: 100%;
 }
 
-.partners__img {
+.container__img-wrapper {
     width: 100%;
+    padding-bottom: 58.8%;
+}
+
+.partners__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
