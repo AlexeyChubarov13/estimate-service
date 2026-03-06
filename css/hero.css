@@ -71,8 +71,6 @@
 .hero__item {
     display: flex;
     flex-direction: column;
-    /* font-size:1rem;
-    line-height: 1.5rem; */
 }
 
 .hero__item-scroll {
@@ -205,12 +203,13 @@
         display: flex;
         position: relative;
         flex-direction: column;
+        gap: 3rem;
         align-items: center;
         background-color: #FFFFFF;
         margin: 0;
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-        padding: 10.5rem 3.375rem 10.25rem;
+        padding: 3.17rem 3.375rem;
         border-radius: 0;
         width: fit-content;
     }
@@ -247,7 +246,10 @@
     }
 
     .hero__promotion-footer {
-        bottom: 20%;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
     }
 
     .hero__tag {
@@ -259,8 +261,6 @@
 
     .hero__tag-vector {
         font-size: 3.9rem;
-        /* width: 1.7em;
-        height: 0.9em; */
     }
 
     .hero__tag-vector circle{
@@ -274,4 +274,18 @@
         font-size: 1.966rem;
         line-height: 2.62rem;
     }
+
+    .hero__text b {
+        display: block;
+    }
+
+    .hero__text::before  {
+        content: "";
+        width: 33px;
+        height: 4px;
+        position: absolute;
+        bottom: 8rem;
+        background-color: #FFD900;
+    }
+    
 }
